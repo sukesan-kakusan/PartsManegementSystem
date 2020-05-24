@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="visewport" content="width=device-width, initial-scale=1">
+    <title>Search Form</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="./LoginSample_files/signin.css" rel="stylesheet">
+    <!-- 背景色の設定 -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light fixed-top bg-primary">
+        <a class="navbar-brand" href="#">
+            <font color="white">PartsManagementSystem</font>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <font color="white">ログアウト</font>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <font color="white">部品を追加</font>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#tab1" class="nav-link active" data-toggle="pill">簡易検索</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab2" class="nav-link" data-toggle="pill">詳細検索</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="text" style="width:400px;" class="form-control" placeholder="search">
+                                <button class="btn  btn-primary" type="submit">検索</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="form-inline">
+                                    <input type="text" style="width:370px" class="form-control">
+                                    <select class="form-control">
+                                        <option>型番</option>
+                                        <option>定格</option>
+                                        <option>製造元</option>
+                                    </select>
+                                </div>
+                                <div class="form-inline form pt-3">
+                                    <select class="form-control">
+                                        <option>OR</option>
+                                        <option>AND</option>
+                                    </select>
+                                    <input type="text" style="width:290px" class="form-control">
+                                    <select class="form-control">
+                                        <option>型番</option>
+                                        <option>定格</option>
+                                        <option>製造元</option>
+                                    </select>
+                                </div>
+                                <div class="form-inline form pt-3">
+                                    <select class="form-control">
+                                        <option>OR</option>
+                                        <option>AND</option>
+                                    </select>
+                                    <input type="text" style="width:290px" class="form-control">
+                                    <select class="form-control">
+                                        <option>型番</option>
+                                        <option>定格</option>
+                                        <option>製造元</option>
+                                    </select>
+                                </div>
+                                <div class="form-inline form pt-3">
+                                    <button class="btn  btn-primary" type="submit">検索</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

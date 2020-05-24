@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    background: rgb(158, 205, 236);
+    padding-top: 120px;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="./LoginSample_files/signin.css" rel="stylesheet">
+    <!-- 背景色の設定 -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light fixed-top bg-primary">
+        <a class="navbar-brand" href="#">
+            <font color="white">PartsManagementSystem</font>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                    <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <font color="white">ログアウト</font>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <font color="white">部品を追加</font>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="mx-auto" style="width: 700px;">
+        <div class="card" style="width: 45rem;">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">部品名</th>
+                            <th scope="col">型番</th>
+                            <th scope="col">定格</th>
+                            <th scope="col">個数</th>
+                            <th scope="col">場所</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>金属皮膜抵抗</td>
+                            <td>AR07DTC4702</td>
+                            <td>10Ω</td>
+                            <td>35</td>
+                            <td>D-00100</td>
+                        </tr>
+                    </tbody>
+                    
+                        <tbody>
+                            <tr onclick="window.open('https://www.yahoo.co.jp')">
+                                <th scope="row">2</th>
+                                <td>金属皮膜抵抗</td>
+                                <td>AR07DTC4702</td>
+                                <td>10Ω</td>
+                                <td>35</td>
+                                <td>D-00100</td>
+                            </tr>
+                        </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
